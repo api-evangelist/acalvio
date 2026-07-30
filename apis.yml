@@ -1,7 +1,26 @@
 aid: acalvio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/acalvio.png
 name: Acalvio
-description: 'Acalvio is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Acalvio Technologies is a cybersecurity company specializing in cyber deception
+  technology for preemptive defense. Its platform detects, disrupts, and defeats advanced
+  threats, ransomware, and identity-based attacks by deploying autonomous, AI-driven
+  deception across enterprise, cloud, and government environments. Acalvio integrates
+  with existing security infrastructure such as CrowdStrike Falcon Identity Protection,
+  Splunk, Microsoft Sentinel, and other SIEM/SOAR solutions, and partners with AWS,
+  Microsoft, and Google Cloud. Acalvio does not currently publish a public developer
+  API, developer portal, or SDK; this profile captures its public web and security
+  posture.'
 url: https://raw.githubusercontent.com/api-evangelist/acalvio/refs/heads/main/apis.yml
 x-type: company
 x-source: accel-portfolio
@@ -13,6 +32,12 @@ modified: '2026-07-17'
 tags:
 - Company
 - Ai
+- Cybersecurity
+- Deception Technology
+- Threat Detection
+- Identity Protection
+- Cloud Security
+- Ransomware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/acalvio-domain-security.yml
 - type: Website
-  url: http://www.acalvio.com
+  url: https://www.acalvio.com
+- type: Blog
+  url: https://www.acalvio.com/blog/
+- type: PrivacyPolicy
+  url: https://www.acalvio.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
